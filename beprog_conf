@@ -1,5 +1,5 @@
 xkb_keymap {
-xkb_keycodes "evdev_aliases(qwerty)" {
+xkb_keycodes "evdev+aliases(qwerty)" {
     minimum = 8;
     maximum = 255;
      <ESC> = 9;
@@ -393,6 +393,7 @@ xkb_types "complete" {
     };
     type "LOCAL_EIGHT_LEVEL" {
         modifiers= Shift+Lock+Control+LevelThree;
+        map[Shift+Lock]= Level1;
         map[Shift]= Level2;
         map[Lock]= Level2;
         map[LevelThree]= Level3;
@@ -622,6 +623,7 @@ xkb_types "complete" {
     };
     type "FOUR_LEVEL_MIXED_KEYPAD" {
         modifiers= Shift+NumLock+LevelThree;
+        map[Shift+NumLock]= Level1;
         map[NumLock]= Level2;
         map[Shift]= Level2;
         map[LevelThree]= Level3;
@@ -1180,7 +1182,7 @@ xkb_compatibility "complete" {
     };
 };
 
-xkb_symbols "pc_beprog_inet(evdev)_terminate(ctrl_alt_bksp)" {
+xkb_symbols "pc+beprog+inet(evdev)+terminate(ctrl_alt_bksp)" {
 
     name[group1]="Beprog";
 
@@ -1247,8 +1249,8 @@ xkb_symbols "pc_beprog_inet(evdev)_terminate(ctrl_alt_bksp)" {
     key <RTRN> {         [          Return ] };
     key <LCTL> {         [       Control_L ] };
     key <AC01> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               a,               A ]
+        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        symbols[Group1]= [               a,               A,  dead_diaeresis,        NoSymbol ]
     };
     key <AC02> {
         type= "ALPHABETIC",
@@ -1287,7 +1289,7 @@ xkb_symbols "pc_beprog_inet(evdev)_terminate(ctrl_alt_bksp)" {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
         symbols[Group1]= [               m,               M,           minus,        NoSymbol ]
     };
-    key <TLDE> {         [      asciitilde,             bar ] };
+    key <TLDE> {         [       Caps_Lock ] };
     key <LFSH> {         [         Shift_L ] };
     key <BKSL> {         [        question,             bar ] };
     key <AB01> {
@@ -1565,6 +1567,7 @@ xkb_symbols "pc_beprog_inet(evdev)_terminate(ctrl_alt_bksp)" {
     key <I254> {         [        XF86WWAN ] };
     key <I255> {         [      XF86RFKill ] };
     modifier_map Control { <LCTL> };
+    modifier_map Lock { <TLDE> };
     modifier_map Shift { <LFSH> };
     modifier_map Shift { <RTSH> };
     modifier_map Mod1 { <LALT> };
