@@ -1209,8 +1209,8 @@ xkb_symbols "pc+beprog+inet(evdev)+terminate(ctrl_alt_bksp)" {
         symbols[Group1]= [               b,               B ]
     };
     key <AD02> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [          eacute,          Eacute ]
+        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        symbols[Group1]= [          eacute,          Eacute,      dead_acute,        NoSymbol ]
     };
     key <AD03> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
@@ -1253,8 +1253,8 @@ xkb_symbols "pc+beprog+inet(evdev)+terminate(ctrl_alt_bksp)" {
         symbols[Group1]= [               a,               A,  dead_diaeresis,        NoSymbol ]
     };
     key <AC02> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               u,               U ]
+        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        symbols[Group1]= [               u,               U,      dead_tilde,        NoSymbol ]
     };
     key <AC03> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
