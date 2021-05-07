@@ -4,10 +4,11 @@ xkb_symbols	"basic"	{
   name[Group1]="Beprog";
   // key <CAPS> {[Escape]}; 
 
-  key	<TLDE>	{	[	asciitilde,	bar	]};
-  key	<AE01>	{	[	1,	exclam	]	};
-  key	<AE02>	{	[	2,	at	]	};
-  key	<AE03>	{	[	3,	numbersign	]};
+  key	<TLDE>	{	[	Caps_Lock]};
+
+  key	<AE01>	{	[	1,	exclam, dead_diaeresis]	};
+  key	<AE02>	{	[	2,	at	, dead_acute	]	};
+  key	<AE03>	{	[	3,	numbersign, dead_tilde	]};
   key	<AE04>	{	[	4,	dollar	]	};
   key	<AE05>	{	[	5,	percent	]	};
   key	<AE06>	{	[	6,	asciicircum	]};
@@ -20,7 +21,7 @@ xkb_symbols	"basic"	{
 
 
   key	<AD01>	{	[	b,	B	]	};
-  key	<AD02>	{	[	eacute,	Eacute	]	};
+  key	<AD02>	{	[	eacute,	Eacute]	};
   key	<AD03>	{	[	p,	P, bracketleft	]	};
   key	<AD04>	{	[	o,	O, bracketright	]	};
   key	<AD05>	{	[	w,	W	]	};
@@ -32,9 +33,9 @@ xkb_symbols	"basic"	{
   key	<AD11>	{	[	slash,	backslash	]	};
   key	<AD12>	{	[	equal, asciitilde	]	};
 
-  key	<AC01>	{	[	a,	A	]	};
-  key	<AC02>	{	[	u,	U, circumflex	]	};
-  key	<AC03>	{	[	i,	I, braceleft	]	};
+  key	<AC01>	{	[	a,	A]	};
+  key	<AC02>	{	[	u,	U]	};
+  key	<AC03>	{	[	i,	I, braceleft]	};
   key	<AC04>	{	[	e,	E, braceright	]	};
   key	<AC05>	{	[	comma, semicolon]	};
   key	<AC06>	{	[	c,	C, ccedilla 	]	};
