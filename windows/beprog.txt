@@ -1,0 +1,53 @@
+SC002	1	!
+SC003	2	@
+SC004	3	#
+SC005	4	$
+SC006	5	%
+SC007	6	[94] 
+SC008	7	&
+SC009	8	*
+SC00a	9	(
+SC00b	0	)
+SC00c	-	_
+SC00d	=	+
+
+
+
+SC010	b	B
+SC011	[233]	[201]
+SC012	p	P	[
+SC013	o	O	]
+SC014	w	W
+SC015	`	^	` 
+SC016	v	V
+SC017	d	D
+SC018	l	L
+SC019	j	J
+SC01a	[47]	[92]	[124]
+SC01b	=	[126] 	[8364]
+
+
+SC01e	a	A	[776]
+SC01f	u	U
+SC020	i	I	{
+SC021	e	E	}
+SC022	,	;
+SC023	c	C	[231]
+SC024	t	T
+SC025	s	S
+SC026	r	R
+SC027	n	N
+SC028	m	M
+SC02b	?	[124]
+
+
+SC02c	z	Z
+SC02d	y	Y	(
+SC02e	x	X	)
+SC02f	.	:
+SC030	k	K
+SC031	[39]	[34]
+SC032	q	Q
+SC033	g	G
+SC034	h	H
+SC035	f	F
