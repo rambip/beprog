@@ -1187,9 +1187,18 @@ xkb_symbols "pc+beprog+inet(evdev)+terminate(ctrl_alt_bksp)" {
     name[group1]="Beprog";
 
     key  <ESC> {         [          Escape ] };
-    key <AE01> {         [               1,          exclam ] };
-    key <AE02> {         [               2,              at ] };
-    key <AE03> {         [               3,      numbersign ] };
+    key <AE01> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [               1,          exclam,  dead_diaeresis,        NoSymbol ]
+    };
+    key <AE02> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [               2,              at,      dead_acute,        NoSymbol ]
+    };
+    key <AE03> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [               3,      numbersign,      dead_tilde,        NoSymbol ]
+    };
     key <AE04> {         [               4,          dollar ] };
     key <AE05> {         [               5,         percent ] };
     key <AE06> {         [               6,     asciicircum ] };
@@ -1209,8 +1218,8 @@ xkb_symbols "pc+beprog+inet(evdev)+terminate(ctrl_alt_bksp)" {
         symbols[Group1]= [               b,               B ]
     };
     key <AD02> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [          eacute,          Eacute,      dead_acute,        NoSymbol ]
+        type= "ALPHABETIC",
+        symbols[Group1]= [          eacute,          Eacute ]
     };
     key <AD03> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
@@ -1249,12 +1258,12 @@ xkb_symbols "pc+beprog+inet(evdev)+terminate(ctrl_alt_bksp)" {
     key <RTRN> {         [          Return ] };
     key <LCTL> {         [       Control_L ] };
     key <AC01> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               a,               A,  dead_diaeresis,        NoSymbol ]
+        type= "ALPHABETIC",
+        symbols[Group1]= [               a,               A ]
     };
     key <AC02> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               u,               U,      dead_tilde,        NoSymbol ]
+        type= "ALPHABETIC",
+        symbols[Group1]= [               u,               U ]
     };
     key <AC03> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
