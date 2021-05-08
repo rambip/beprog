@@ -1189,151 +1189,199 @@ xkb_symbols "pc+beprog+inet(evdev)+terminate(ctrl_alt_bksp)" {
     key  <ESC> {         [          Escape ] };
     key <AE01> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [               1,          exclam,  dead_diaeresis,        NoSymbol ]
+        symbols[Group1]= [               1,          exclam,     onesuperior,      exclamdown ]
     };
     key <AE02> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [               2,              at,      dead_acute,        NoSymbol ]
+        symbols[Group1]= [               2,              at,  dead_diaeresis,       oneeighth ]
     };
     key <AE03> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [               3,      numbersign,      dead_tilde,        NoSymbol ]
+        symbols[Group1]= [               3,      numbersign,      dead_acute,        sterling ]
     };
-    key <AE04> {         [               4,          dollar ] };
-    key <AE05> {         [               5,         percent ] };
-    key <AE06> {         [               6,     asciicircum ] };
-    key <AE07> {         [               7,       ampersand ] };
-    key <AE08> {         [               8,        asterisk ] };
-    key <AE09> {         [               9,       parenleft ] };
-    key <AE10> {         [               0,      parenright ] };
-    key <AE11> {         [           minus,      underscore ] };
-    key <AE12> {         [           equal,            plus ] };
+    key <AE04> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [               4,          dollar,      dead_tilde,          dollar ]
+    };
+    key <AE05> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [               5,         percent,         onehalf,    threeeighths ]
+    };
+    key <AE06> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [               6,     asciicircum,   threequarters,     fiveeighths ]
+    };
+    key <AE07> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [               7,       ampersand,       braceleft,    seveneighths ]
+    };
+    key <AE08> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [               8,        asterisk,     bracketleft,       trademark ]
+    };
+    key <AE09> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [               9,       parenleft,    bracketright,       plusminus ]
+    };
+    key <AE10> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [               0,      parenright,      Greek_beta,          degree ]
+    };
+    key <AE11> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [           minus,      underscore,       backslash,    questiondown ]
+    };
+    key <AE12> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [           equal,            plus,    dead_cedilla,     dead_ogonek ]
+    };
     key <BKSP> {
         type= "CTRL+ALT",
         symbols[Group1]= [       BackSpace,       BackSpace,        NoSymbol,        NoSymbol, Terminate_Server ]
     };
     key  <TAB> {         [             Tab,    ISO_Left_Tab ] };
     key <AD01> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               b,               B ]
+        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        symbols[Group1]= [               b,               B,              at,     Greek_OMEGA ]
     };
     key <AD02> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [          eacute,          Eacute ]
+        type= "FOUR_LEVEL_ALPHABETIC",
+        symbols[Group1]= [          eacute,          Eacute,         lstroke,         Lstroke ]
     };
     key <AD03> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               p,               P,     bracketleft,        NoSymbol ]
+        symbols[Group1]= [               p,               P,     bracketleft,               E ]
     };
     key <AD04> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               o,               O,    bracketright,        NoSymbol ]
+        symbols[Group1]= [               o,               O,    bracketright,      registered ]
     };
     key <AD05> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               w,               W ]
+        type= "FOUR_LEVEL_ALPHABETIC",
+        symbols[Group1]= [               w,               W,          tslash,          Tslash ]
     };
     key <AD06> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [      dead_grave, dead_circumflex,           grave,        NoSymbol ]
+        symbols[Group1]= [      dead_grave, dead_circumflex,           grave,             yen ]
     };
     key <AD07> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               v,               V ]
+        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        symbols[Group1]= [               v,               V,       downarrow,         uparrow ]
     };
     key <AD08> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               d,               D,            Home,        NoSymbol ]
+        symbols[Group1]= [               d,               D,            Home,        idotless ]
     };
     key <AD09> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               l,               L,             End,        NoSymbol ]
+        symbols[Group1]= [               l,               L,             End,          Oslash ]
     };
     key <AD10> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               j,               J ]
+        type= "FOUR_LEVEL_ALPHABETIC",
+        symbols[Group1]= [               j,               J,           thorn,           THORN ]
     };
-    key <AD11> {         [           slash,       backslash ] };
-    key <AD12> {         [           equal,      asciitilde ] };
+    key <AD11> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [           slash,       backslash,  dead_diaeresis,  dead_abovering ]
+    };
+    key <AD12> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [           equal,      asciitilde,      dead_tilde,     dead_macron ]
+    };
     key <RTRN> {         [          Return ] };
     key <LCTL> {         [       Control_L ] };
     key <AC01> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               a,               A ]
+        type= "FOUR_LEVEL_ALPHABETIC",
+        symbols[Group1]= [               a,               A,              ae,              AE ]
     };
     key <AC02> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               u,               U ]
+        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        symbols[Group1]= [               u,               U,          ssharp,         section ]
     };
     key <AC03> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               i,               I,       braceleft,        NoSymbol ]
+        symbols[Group1]= [               i,               I,       braceleft,             ETH ]
     };
     key <AC04> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               e,               E,      braceright,        NoSymbol ]
+        symbols[Group1]= [               e,               E,      braceright,     ordfeminine ]
     };
-    key <AC05> {         [           comma,       semicolon ] };
+    key <AC05> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [           comma,       semicolon,             eng,             ENG ]
+    };
     key <AC06> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               c,               C,        ccedilla,        NoSymbol ]
+        type= "FOUR_LEVEL_ALPHABETIC",
+        symbols[Group1]= [               c,               C,        ccedilla,         Hstroke ]
     };
     key <AC07> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               t,               T,            Left,        NoSymbol ]
+        symbols[Group1]= [               t,               T,            Left,       dead_horn ]
     };
     key <AC08> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               s,               S,            Down,        NoSymbol ]
+        symbols[Group1]= [               s,               S,            Down,       ampersand ]
     };
     key <AC09> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               r,               R,              Up,        NoSymbol ]
+        symbols[Group1]= [               r,               R,              Up,         Lstroke ]
     };
     key <AC10> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               n,               N,           Right,        NoSymbol ]
+        symbols[Group1]= [               n,               N,           Right, dead_doubleacute ]
     };
     key <AC11> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               m,               M,           minus,        NoSymbol ]
+        symbols[Group1]= [               m,               M,           minus,      dead_caron ]
     };
-    key <TLDE> {         [       Caps_Lock ] };
+    key <TLDE> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [       Caps_Lock,      asciitilde,         notsign,         notsign ]
+    };
     key <LFSH> {         [         Shift_L ] };
-    key <BKSL> {         [        question,             bar ] };
+    key <BKSL> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [        question,             bar,      dead_grave,      dead_breve ]
+    };
     key <AB01> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               z,               Z ]
+        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        symbols[Group1]= [               z,               Z,   guillemotleft,            less ]
     };
     key <AB02> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               y,               Y,       parenleft,        NoSymbol ]
+        symbols[Group1]= [               y,               Y,       parenleft,         greater ]
     };
     key <AB03> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               x,               X,      parenright,        NoSymbol ]
+        symbols[Group1]= [               x,               X,      parenright,       copyright ]
     };
-    key <AB04> {         [          period,           colon ] };
+    key <AB04> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [          period,           colon, leftdoublequotemark, leftsinglequotemark ]
+    };
     key <AB05> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               k,               K ]
+        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        symbols[Group1]= [               k,               K, rightdoublequotemark, rightsinglequotemark ]
     };
-    key <AB06> {         [      apostrophe,        quotedbl ] };
+    key <AB06> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [      apostrophe,        quotedbl,               n,               N ]
+    };
     key <AB07> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               q,               Q ]
+        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        symbols[Group1]= [               q,               Q,              mu,       masculine ]
     };
     key <AB08> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               g,               G ]
+        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        symbols[Group1]= [               g,               G,  horizconnector,        multiply ]
     };
     key <AB09> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               h,               H ]
+        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        symbols[Group1]= [               h,               H,  periodcentered,        division ]
     };
     key <AB10> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               f,               F ]
+        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        symbols[Group1]= [               f,               F,   dead_belowdot,   dead_abovedot ]
     };
     key <RTSH> {         [         Shift_R ] };
     key <KPMU> {
